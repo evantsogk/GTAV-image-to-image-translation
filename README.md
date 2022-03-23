@@ -8,3 +8,6 @@ This project aims to transform GTA V images so that they have the style of two d
 The inspiration comes from [CyCADA](https://arxiv.org/pdf/1711.03213.pdf) and [Enhancing photorealism enhancement](http://vladlen.info/papers/EPE.pdf).
 
 
+## Image-to-image translation
+
+### Datasets
