@@ -19,11 +19,11 @@ The following is a simple guide to prepare the data and perform image-to-image t
 [Cityscapes](https://www.cityscapes-dataset.com/): Download and extract 'leftImg8bit_trainvaltest.zip' to 'datasets/cityscapes_fine' and 'leftImg8bit_trainextra.zip' to 'datasets/cityscapes_extra'.
 ```
 /datasets
-  /cityscapes_extra
-    /leftImg8bit
-  /cityscapes_fine
-    /gtFine
-    /leftImg8bit
+    /cityscapes_extra
+        /leftImg8bit
+    /cityscapes_fine
+        /gtFine
+        /leftImg8bit
 ```
 
 
