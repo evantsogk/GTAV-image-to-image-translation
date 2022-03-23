@@ -22,3 +22,6 @@ The following is a simple guide to prepare the data and perform image-to-image t
 
 
 ## 3. Perform image-to-image translation using CycleGAN
+
+
+## 4. Evaluation
