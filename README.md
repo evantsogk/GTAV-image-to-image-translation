@@ -8,8 +8,8 @@ Translation example using CycleGAN:
 
 Semantic segmentation example of DeepLabv3+ trained with CycleGAN's translated images from GTA V to Cityscapes:
 <p float="left">
-  <img src="imgs/46_image.png" width="400"/>
-  <img src="imgs/46_cyclegan.png" width="400"/> 
+  <img src="imgs/46_image.png" width="350"/>
+  <img src="imgs/46_cyclegan.png" width="350"/> 
 </p>
 
 The following is a simple guide to prepare the data and perform image-to-image translation. I use CycleGAN as an example because it produces the best results, but the process is very similar for the other models.
