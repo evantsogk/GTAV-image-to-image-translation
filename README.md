@@ -26,6 +26,13 @@ The following is a simple guide to prepare the data and perform image-to-image t
         /leftImg8bit
 ```
 
+[GTA V](http://download.visinf.tu-darmstadt.de/data/from_games/): Download and extract all 10 parts of the images to 'datasets/gtav'. For image-to-image translation only the images are needed, but for semantic segmentation you should also download the labels separately. 
+```
+/datasets
+    /gtav
+        /images
+	      /labels
+```
 
 ## 2. Prepare data
 
