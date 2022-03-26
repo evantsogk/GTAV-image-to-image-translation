@@ -31,7 +31,7 @@ The following is a simple guide to prepare the data and perform image-to-image t
 /datasets
     /gtav
         /images
-	      /labels
+	/labels
 ```
 
 ## 2. Prepare data
