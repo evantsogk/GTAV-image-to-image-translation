@@ -16,7 +16,7 @@ The following is a simple guide to prepare the data and perform image-to-image t
 
 
 ## 1. Download datasets
-[Cityscapes](https://www.cityscapes-dataset.com/): Download and extract 'leftImg8bit_trainvaltest.zip' to 'datasets/cityscapes_fine' and 'leftImg8bit_trainextra.zip' to 'datasets/cityscapes_extra'.
+[Cityscapes](https://www.cityscapes-dataset.com/): Download and extract 'leftImg8bit_trainvaltest.zip' to 'datasets/cityscapes_fine' and 'leftImg8bit_trainextra.zip' to 'datasets/cityscapes_extra'. For semantic segmentation you should also download and extract 'gtFine_trainvaltest.zip' to 'datasets/cityscapes_fine'.
 ```
 /datasets
     /cityscapes_extra
