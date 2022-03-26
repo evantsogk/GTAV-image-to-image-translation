@@ -47,11 +47,11 @@ The following is a simple guide to prepare the data and perform image-to-image t
 
 - To prepare images for GTA V to Cityscapes translation run:
 ```bash
-python prepare_cityscapes --cityscapes_extra ./datasets/cityscapes_extra/leftImg8bit --cityscapes_fine ./datasets/cityscapes_fine/leftImg8bit --output_dir ./datasets/gtav2cityscapes
+python prepare_cityscapes.py --cityscapes_extra ./datasets/cityscapes_extra/leftImg8bit --cityscapes_fine ./datasets/cityscapes_fine/leftImg8bit --output_dir ./datasets/gtav2cityscapes
 ```
 
 ```bash
-python prepare_gtav --images_dir ./datasets/gtav/images --split ./datasets/split.mat --output_dir ./datasets/gtav2cityscapes
+python prepare_gtav.py --images_dir ./datasets/gtav/images --split ./datasets/split.mat --output_dir ./datasets/gtav2cityscapes
 ```
 
 You should get:
@@ -67,11 +67,11 @@ You should get:
 
 - To prepare images for GTA V to Mapillary Vistas translation run:
 ```bash
-python prepare_mapillary --images_dir ./datasets/mapillary --output_dir ./datasets/gtav2mapillary
+python prepare_mapillary.py --images_dir ./datasets/mapillary --output_dir ./datasets/gtav2mapillary
 ```
 
 ```bash
-python prepare_gtav --images_dir ./datasets/gtav/images --split ./datasets/split.mat --output_dir ./datasets/gtav2mapillary
+python prepare_gtav.py --images_dir ./datasets/gtav/images --split ./datasets/split.mat --output_dir ./datasets/gtav2mapillary
 ```
 
 You should get:
