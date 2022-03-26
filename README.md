@@ -26,6 +26,15 @@ The following is a simple guide to prepare the data and perform image-to-image t
         /leftImg8bit
 ```
 
+[Mapillary Vistas](https://www.mapillary.com/dataset/vistas?lat=20&lng=0&z=1.5&pKey=301072681638536): Instead of Cityscapes you can use Mapillary Vistas. Download and extract 'mapillary-vistas-dataset_public_v2.0.zip' to 'datasets/mapillary'.
+```
+/datasets
+    /mapillary
+    	/testing
+	/training
+        /validation
+```
+
 [GTA V](http://download.visinf.tu-darmstadt.de/data/from_games/): Download and extract all 10 parts of the images to 'datasets/gtav'. For image-to-image translation only the images are needed, but for semantic segmentation you should also download the labels separately. 
 ```
 /datasets
