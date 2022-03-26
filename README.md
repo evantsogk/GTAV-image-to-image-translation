@@ -45,6 +45,45 @@ The following is a simple guide to prepare the data and perform image-to-image t
 
 ## 2. Prepare data
 
+- To prepare images for GTA V to Cityscapes translation run:
+```bash
+python prepare_cityscapes --cityscapes_extra ./datasets/cityscapes_extra/leftImg8bit --cityscapes_fine ./datasets/cityscapes_fine/leftImg8bit --output_dir ./datasets/gtav2cityscapes
+```
+
+```bash
+python prepare_gtav --images_dir ./datasets/gtav/images --split ./datasets/split.mat --output_dir ./datasets/gtav2cityscapes
+```
+
+You should get:
+```
+/datasets
+    /gtav2cityscapes
+	/testA
+	/testB
+	/trainA
+	/trainB
+```
+
+
+- To prepare images for GTA V to Mapillary Vistas translation run:
+```bash
+python prepare_mapillary --images_dir ./datasets/mapillary --output_dir ./datasets/gtav2mapillary
+```
+
+```bash
+python prepare_gtav --images_dir ./datasets/gtav/images --split ./datasets/split.mat --output_dir ./datasets/gtav2mapillary
+```
+
+You should get:
+```
+/datasets
+    /gtav2mapillary
+	/testA
+	/testB
+	/trainA
+	/trainB
+```
+
 
 ## 3. Image-to-image translation using CycleGAN
 
