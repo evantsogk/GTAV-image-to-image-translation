@@ -88,7 +88,7 @@ You should get:
 ## 3. Image-to-image translation using CycleGAN
 - First clone [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). 
 - To view progress during training run `python -m visdom.server` and click the URL <http://localhost:8097>. You could also disable visdom by setting `--display_id 0`.
--  
+  
 - To train CycleGAN to translate GTA V images to Cityscapes run:
 ```bash
 python train.py --dataroot [path to datasets/gtav2cityscapes] --name gtav2cityscapes --model cycle_gan --preprocess 'crop' --save_epoch_freq 2 --n_epochs 30
