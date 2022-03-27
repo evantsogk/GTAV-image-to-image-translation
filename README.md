@@ -87,12 +87,19 @@ You should get:
 
 ## 3. Image-to-image translation using CycleGAN
 - First clone [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). 
-- To view progress during training run `python -m visdom.server` and click the URL <http://localhost:8097>. You could also disable visdom by setting `--display_id 0`. 
+- To view progress during training run `python -m visdom.server` and click the URL <http://localhost:8097>. You could also disable visdom by setting `--display_id 0`.
+-  
 - To train CycleGAN to translate GTA V images to Cityscapes run:
 ```bash
 python train.py --dataroot [path to datasets/gtav2cityscapes] --name gtav2cityscapes --model cycle_gan --preprocess 'crop' --save_epoch_freq 2 --n_epochs 30
 ```
 The `--dataroot` path should be something like 'D:/Users/User/PycharmProjects/GTAV-image-to-image-translation/datasets/gtav2cityscapes'. In the case of Mapillary Vistas replace 'gtav2cityscapes' with 'gtav2mapillary'. The checkpoints, as well as intermediate results, will be saved in the 'checkpoints' directory.
+
+- To test CycleGAN rename the checkpoint '30_net_G_A.pth' (the number corresponds to the epoch) to '30_net_G.pth' and run:
+```bash
+python test.py --dataroot [path to datasets/gtav2cityscapes/testA] --name gtav2cityscapes --model test --no_dropout --preprocess 'none' --epoch 30
+```
+The translated images will be saved in the 'results' directory. By default, CycleGAN generates 50 images. To translate all GTA V test images set `--num_test 6181`.
 
 
 ## 4. Evaluation
