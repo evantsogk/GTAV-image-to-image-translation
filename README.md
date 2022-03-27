@@ -103,3 +103,13 @@ The translated images will be saved in the 'results' directory. By default, Cycl
 
 
 ## 4. Evaluation
+
+- To calculate IS, FID, and KID for the translated images I used [torch-fidelity](https://github.com/toshas/torch-fidelity). If you want to calculate only FID, you could also use [pytorch-fid](https://github.com/mseitzer/pytorch-fid). I tested both, and the results are almost the same.
+First, install torch-fidelity:
+```
+pip install torch-fidelity
+```
+Then run:
+```
+fidelity --gpu 0 --isc --fid --kid --kid-subset-size 500 --input1 [path to translated GTA V images] --input2 [path to datasets/gtav2cityscapes/testB]
+```
