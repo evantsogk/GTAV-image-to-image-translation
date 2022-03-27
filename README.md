@@ -113,3 +113,4 @@ Then run:
 ```
 fidelity --gpu 0 --isc --fid --kid --kid-subset-size 500 --input1 [path to translated GTA V images] --input2 [path to datasets/gtav2cityscapes/testB]
 ```
+- For semantic segmentation, I used [this](https://github.com/VainF/DeepLabV3Plus-Pytorch) PyTorch implementation of DeepLabv3+ with some changes (data preprocessing/loading) to work with my data.
